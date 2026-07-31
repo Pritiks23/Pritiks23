@@ -1,4 +1,4 @@
-# Hello, I'm Pritika
+# Hello, I'm Pritika 🚀
 
 ## GPU Systems Engineer | CUDA • PyTorch Distributed Training • GPU Optimization
 
