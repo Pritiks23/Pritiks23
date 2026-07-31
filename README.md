@@ -20,7 +20,7 @@ My work focuses on:
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
 ## 🟢 GPU Graph Memory Lab
 
@@ -50,9 +50,7 @@ CUDA benchmarking suite analyzing how GPU memory allocation strategies impact gr
 
 </td>
 
-<td width="50%">
-
-
+<td width="50%" valign="top">
 
 ## 🟣 EuroSAT GPU Training Pipeline
 
@@ -66,11 +64,12 @@ End-to-end GPU accelerated computer vision training pipeline built with PyTorch.
 ✅ Training performance analysis  
 ✅ Model evaluation and visualization  
 
+### Results
 
 | Epoch | Validation Accuracy |
-|------:|--------------------:|
-| 1 | 73.6% |
-| 20 | **94.1%** |
+|---|---:|
+| Epoch 1 | 73.6% |
+| Epoch 20 | **94.1%** |
 
 ### Goal
 
@@ -78,7 +77,9 @@ Analyze how GPU utilization, preprocessing acceleration, and training pipeline o
 
 🔗 [View Repository](https://github.com/Pritiks23/eurosat-hpc-training)
 
-
+</td>
+</tr>
+</table>
 
 ---
 
