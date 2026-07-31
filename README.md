@@ -66,18 +66,6 @@ End-to-end GPU accelerated computer vision training pipeline built with PyTorch.
 ✅ Training performance analysis  
 ✅ Model evaluation and visualization  
 
-### Dataset
-
-🛰️ **EuroSAT Satellite Image Dataset**
-
-- 27,000 satellite images
-- 10 land-use classification categories
-- Train / Validation / Test pipeline
-- PyTorch DataLoader-based ingestion
-
-### Results
-
-📈 Validation Accuracy Improvement
 
 | Epoch | Validation Accuracy |
 |------:|--------------------:|
