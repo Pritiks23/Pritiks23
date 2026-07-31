@@ -52,26 +52,35 @@ CUDA benchmarking suite analyzing how GPU memory allocation strategies impact gr
 
 <td width="50%">
 
+
 ## 🟣 EuroSAT GPU Training Pipeline
 
-End-to-end GPU accelerated computer vision training pipeline built with PyTorch.
+End-to-end GPU accelerated satellite image classification pipeline built with PyTorch.
 
-### Implemented
+```mermaid
+flowchart TD
 
-✅ CUDA accelerated preprocessing  
-✅ Mixed precision training  
-✅ GPU data loading optimization  
-✅ Training performance analysis  
+A[🛰️ EuroSAT Dataset<br/>27,000 Satellite Images] 
+--> B[dataset.py<br/>Load + Transform Images]
 
-### Goal
+B --> C[Train / Validation / Test Split]
 
-Analyze how GPU utilization, preprocessing, and training pipelines affect deep learning throughput.
+C --> D[PyTorch DataLoader<br/>GPU Optimized Loading]
 
-🔗 [View Repository](https://github.com/Pritiks23/eurosat-hpc-training)
+D --> E[train.py<br/>GPU Training Pipeline]
 
-</td>
-</tr>
-</table>
+E --> F[CNN Forward Pass]
+F --> G[Loss Calculation]
+G --> H[Backpropagation + AMP]
+H --> I[Model Checkpointing]
+
+I --> J[evaluate.py<br/>Accuracy / F1 / Confusion Matrix]
+
+I --> K[visualize.py<br/>Predictions + Confidence Scores]
+
+D --> L[benchmark.py<br/>CPU vs CUDA Processing]
+
+J --> M[📈 Epoch 1: 73.6% Accuracy<br/>Epoch 20: 94.1% Accuracy]
 
 ---
 
