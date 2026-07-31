@@ -180,12 +180,21 @@ Currently exploring:
 
 ---
 
-# 📊 GitHub Stats
+# 📊 Engineering Highlights
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Pritiks23&show_icons=true&hide_border=true)
+| Area | Highlights |
+|---|---|
+| GPU Computing | CUDA memory allocation benchmarks, GPU optimization experiments |
+| Distributed Training | PyTorch DDP with NCCL multi-GPU communication |
+| Model Parallelism | Tensor Parallel Transformer implementation |
+| Computer Vision | GPU accelerated EuroSAT training pipeline |
+| Performance Engineering | Runtime analysis, memory profiling, workload benchmarking |
 
 ---
 
+# 🧪 Current Focus
+
+
 # 📫 Connect
 
-LinkedIn: YOUR_LINK
+LinkedIn: https://www.linkedin.com/in/pritika-vipin/
