@@ -84,7 +84,7 @@ J --> M[📈 Epoch 1: 73.6% Accuracy<br/>Epoch 20: 94.1% Accuracy]
 
 ---
 
-# 🔥 Distributed AI Systems
+#  Distributed AI Systems
 
 <table>
 <tr>
