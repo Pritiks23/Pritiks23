@@ -46,7 +46,7 @@ CUDA benchmarking suite analyzing how GPU memory allocation strategies impact gr
 
 `cudaMallocAsync` achieved the best performance by reducing allocation overhead for repeated GPU memory operations.
 
-🔗 [View Repository](https://github.com/Pritiks23/gpu-graph-memory-lab)
+🔗 [View Repository](https://github.com/Pritiks23/gpu-graph-memory-lab-)
 
 </td>
 
