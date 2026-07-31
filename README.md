@@ -1,111 +1,191 @@
-# Hi, I'm Pritika 👋
+# Hello, I'm Pritika
 
-GPU Systems Engineer focused on CUDA, distributed training, and AI infrastructure.
+## GPU Systems Engineer | CUDA • PyTorch Distributed Training • GPU Optimization
 
-I build and benchmark GPU workloads with a focus on:
-- CUDA memory optimization
-- Multi-GPU training
-- Distributed deep learning
-- GPU performance analysis
+I build and benchmark GPU workloads focused on understanding how hardware, memory, and distributed computing impact modern AI systems.
 
-Currently exploring how GPU systems design impacts the efficiency and scalability of modern AI workloads.
+My work focuses on:
 
----
-
-## 🚀 Featured Projects
-
-### 🟢 GPU Graph Memory Lab
-
-A CUDA benchmarking suite exploring how GPU memory allocation strategies impact graph analytics performance.
-
-**Workload:**
-- PageRank on SNAP citation graph
-- CSR graph representation
-- CUDA kernels
-- NVIDIA RTX 3090 benchmarking
-
-**Compared:**
-- `cudaMalloc`
-- `cudaMallocAsync`
-- Custom GPU Memory Pool
-- Unified Memory
-
-**Key Finding:**
-- `cudaMallocAsync` achieved the best runtime
-- Improved performance by reducing allocation overhead
-
-🔗 [gpu-graph-memory-lab](https://github.com/Pritiks23/gpu-graph-memory-lab)
+| Focus Area | Technologies |
+|---|---|
+| GPU Programming | CUDA, CUDA Memory Management, GPU Optimization |
+| Distributed Training | PyTorch DDP, NCCL, DistributedSampler |
+| Model Scaling | Tensor Parallelism, Transformer Parallelization |
+| Deep Learning Systems | PyTorch, Mixed Precision Training |
+| Languages | Python, C++, C |
 
 ---
 
-### 🟣 EuroSAT GPU Training Pipeline
+# 🚀 Featured GPU Projects
 
-End-to-end GPU accelerated image classification training pipeline using PyTorch.
+<table>
+<tr>
+<td width="50%">
 
-Implemented:
-- CUDA accelerated preprocessing
-- Mixed precision training
-- GPU data loading optimization
-- Training benchmarking
+## 🟢 GPU Graph Memory Lab
 
-Built to analyze how input pipelines and GPU utilization affect deep learning performance.
+CUDA benchmarking suite analyzing how GPU memory allocation strategies impact graph analytics performance.
 
-🔗 [eurosat-hpc-training](https://github.com/Pritiks23/eurosat-hpc-training)
+### Workload
+
+- Algorithm: PageRank
+- Dataset: SNAP citation graph
+- Representation: CSR Graph Format
+- Hardware: NVIDIA RTX 3090
+
+### Memory Strategies Tested
+
+| Strategy | Result |
+|---|---|
+| cudaMalloc | Baseline allocation |
+| cudaMallocAsync | 🥇 Best runtime |
+| Memory Pool | Improved reuse, higher memory usage |
+| Unified Memory | Higher overhead |
+
+### Key Finding
+
+`cudaMallocAsync` achieved the best performance by reducing allocation overhead for repeated GPU memory operations.
+
+🔗 [View Repository](https://github.com/Pritiks23/gpu-graph-memory-lab)
+
+</td>
+
+<td width="50%">
+
+## 🟣 EuroSAT GPU Training Pipeline
+
+End-to-end GPU accelerated computer vision training pipeline built with PyTorch.
+
+### Implemented
+
+✅ CUDA accelerated preprocessing  
+✅ Mixed precision training  
+✅ GPU data loading optimization  
+✅ Training performance analysis  
+
+### Goal
+
+Analyze how GPU utilization, preprocessing, and training pipelines affect deep learning throughput.
+
+🔗 [View Repository](https://github.com/Pritiks23/eurosat-hpc-training)
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 🔵 Distributed Data Parallel Training
+# 🔥 Distributed AI Systems
 
-Multi-GPU training implementation using PyTorch DistributedDataParallel.
+<table>
+<tr>
 
-Technologies:
-- PyTorch DDP
+<td width="50%">
+
+## 🔵 PyTorch DistributedDataParallel
+
+Multi-GPU training implementation using PyTorch distributed systems.
+
+### Architecture
+
+```
+              Model
+                |
+     -------------------------
+     |           |           |
+   GPU 0       GPU 1       GPU 2
+
+          NCCL AllReduce
+```
+
+### Implemented
+
+- PyTorch DistributedDataParallel
 - NCCL communication
 - DistributedSampler
 - Mixed precision training
 
-Results:
+### Results
+
 - Multi-GPU RTX 3090 training
 - Improved throughput through distributed execution
 
----
+</td>
 
-### 🟠 Tensor Parallel Transformer
+<td width="50%">
 
-Implemented tensor parallelism concepts for transformer architectures.
+## 🟠 Tensor Parallel Transformer
 
-Explored:
-- Splitting model computation across GPUs
-- Parallel linear layers
+Explored model parallelism techniques for transformer architectures.
+
+### Architecture
+
+```
+          Transformer Layer
+
+              Linear
+
+        ----------------
+        |              |
+      GPU 0          GPU 1
+
+     Partitioned computation
+              |
+        Combined output
+```
+
+### Implemented
+
+- Tensor parallel linear layers
 - Distributed model execution
+- GPU workload partitioning
+
+</td>
+
+</tr>
+</table>
 
 ---
 
-## 🛠 Technical Focus
+# 🧠 GPU Engineering Focus
 
-### GPU Computing
-CUDA • CUDA Memory Management • GPU Optimization • GPU Profiling
+```
+CUDA Programming
+        ↓
+GPU Memory Optimization
+        ↓
+Distributed Training
+        ↓
+Efficient AI Infrastructure
+```
 
-### Deep Learning Systems
-PyTorch • DistributedDataParallel • Tensor Parallelism • Mixed Precision Training
-
-### Programming
-Python • C++ • C • Linux
-
-### Tools
-Docker • Git • NVIDIA CUDA Toolkit
-
----
-
-## 📈 Current Interests
+Currently exploring:
 
 - GPU performance optimization
-- Distributed AI systems
-- Efficient deep learning infrastructure
-- CUDA programming
+- CUDA-based acceleration
+- Distributed deep learning systems
+- Efficient AI workloads
 
 ---
 
-## 📫 Connect
+# 🛠 Technical Stack
 
-LinkedIn: https://www.linkedin.com/in/pritika-vipin/
+| Category | Tools |
+|---|---|
+| GPU Computing | CUDA, CUDA Toolkit, GPU Memory Management |
+| AI Frameworks | PyTorch |
+| Distributed Systems | DDP, NCCL, Tensor Parallelism |
+| Programming | Python, C++, C |
+| Development | Linux, Docker, Git |
+
+---
+
+# 📊 GitHub Stats
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Pritiks23&show_icons=true&hide_border=true)
+
+---
+
+# 📫 Connect
+
+LinkedIn: YOUR_LINK
