@@ -53,39 +53,8 @@ CUDA benchmarking suite analyzing how GPU memory allocation strategies impact gr
 <td width="50%" valign="top">
 
 ## 🟣 EuroSAT GPU Training Pipeline
-```text
-                          [ EuroSAT Dataset ]
-                                 |
-                           [ dataset.py ]
-                                 |
-               [ Train / Validation / Test Split ]
-                                 |
-                     [ PyTorch DataLoader ]
-                                 |
-         +-----------------------+-----------------------+
-         |                                               |
-         v                                               v
-  [ benchmark.py ]                               [ train.py ]
-         |                                               |
-         |                                +--------------+--------------+
-         |                                | GPU Training Pipeline       |
-+--------+-----------------------+         |----------------------------|
-| CPU OpenMP Benchmark           |         | CNN Forward Pass           |
-| CUDA Accelerated Processing    |         | Loss Calculation           |
-+--------------------------------+         | Backpropagation + AMP      |
-                                           | Model Checkpointing        |
-                                           +--------------+-------------+
-                                                          |
-                                          +---------------+---------------+
-                                          |                               |
-                                          v                               v
-                                   [ evaluate.py ]                [ visualize.py ]
-                                          |                               |
-                          +---------------+---------------+   +-----------+-----------+
-                          | Accuracy / F1 Metrics         |   | Prediction Visualization |
-                          | Confusion Matrix              |   | Confidence Scores         |
-                          +-------------------------------+   +---------------------------+
-```
+<img width="753" height="629" alt="Screen Shot 2026-08-06 at 1 25 45 PM" src="https://github.com/user-attachments/assets/aed89a20-23c2-4fc4-a2f6-474fb4d969e5" />
+
 
 End-to-end GPU accelerated computer vision training pipeline built with PyTorch.
 
