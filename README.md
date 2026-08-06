@@ -82,7 +82,9 @@ Analyze how GPU utilization, preprocessing acceleration, and training pipeline o
 </tr>
 </table>
 
----
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ## 🔴 GEMM Kernel Optimization Study
 
@@ -105,11 +107,11 @@ CUDA benchmarking study analyzing how different matrix multiplication implementa
 
 ### Results
 
-| Strategy          |      Runtime |
-| ----------------- | -----------: |
-| CPU NumPy         |    221.75 ms |
-| PyTorch CUDA GEMM |  **2.98 ms** |
-| Naive CUDA Kernel |     38.97 ms |
+| Strategy | Runtime |
+| -------- | ------: |
+| CPU NumPy | 221.75 ms |
+| PyTorch CUDA GEMM | **2.98 ms** |
+| Naive CUDA Kernel | 38.97 ms |
 | Tiled CUDA Kernel | **21.18 ms** |
 
 ### Goal
@@ -118,7 +120,9 @@ Analyze how GPU parallelism, memory hierarchy, shared memory optimization, and C
 
 🔗 [View Repository](https://github.com/Pritiks23/gemm-kernel-study)
 
----
+</td>
+</tr>
+</table>
 
 #  Distributed AI Systems
 
