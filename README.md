@@ -95,13 +95,14 @@ CUDA benchmarking study analyzing how different matrix multiplication implementa
 - Precision: FP32
 - Hardware: NVIDIA GPU
 
-### Implemented
+### GEMM Strategies Tested
 
-✅ CPU NumPy baseline comparison  
-✅ PyTorch CUDA GEMM benchmarking  
-✅ Custom CUDA kernels  
-✅ Shared memory tiled optimization  
-✅ GPU throughput analysis  
+| Strategy | Description |
+| -------- | ----------- |
+| CPU NumPy | CPU baseline implementation |
+| PyTorch CUDA GEMM | Optimized GPU library implementation |
+| Naive CUDA Kernel | Custom CUDA kernel using global memory |
+| Tiled CUDA Kernel | Shared memory optimized CUDA kernel |
 
 ### Results
 
@@ -114,15 +115,17 @@ CUDA benchmarking study analyzing how different matrix multiplication implementa
 
 ### Key Finding
 
-Shared memory tiling improved custom CUDA kernel performance by **45.6%** by reducing global memory accesses and increasing data reuse.
+GPU GEMM achieved **~74.5x speedup** over CPU execution.
 
-PyTorch CUDA GEMM achieved **~74.5x speedup** over CPU execution through optimized GPU kernels.
+Shared memory tiling improved custom CUDA kernel performance by **45.6%** by increasing data reuse and reducing global memory traffic.
 
 ### Goal
 
-Understand how GPU parallelism, memory hierarchy, shared memory optimization, and CUDA kernel design influence AI workload performance.
+Analyze how GPU parallelism, memory hierarchy, shared memory optimization, and CUDA kernel design influence AI workload performance.
 
 🔗 [View Repository](https://github.com/Pritiks23/gemm-kernel-study)
+
+---
 
 #  Distributed AI Systems
 
