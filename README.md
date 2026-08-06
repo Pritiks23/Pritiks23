@@ -84,6 +84,47 @@ Analyze how GPU utilization, preprocessing acceleration, and training pipeline o
 
 ---
 
+## 🔴 GEMM Kernel Optimization Study
+
+CUDA benchmarking study analyzing how different matrix multiplication implementations impact GPU performance.
+
+### Implemented
+
+✅ CPU NumPy baseline comparison  
+✅ PyTorch CUDA GEMM benchmarking  
+✅ Custom CUDA kernels  
+✅ Shared memory tiled optimization  
+✅ GPU throughput analysis  
+
+### Workload
+
+- Operation: Matrix Multiplication (`C = A × B`)
+- Matrix Size: `4096 x 4096`
+- Precision: FP32
+
+### Results
+
+| Strategy | Runtime |
+| -------- | ------: |
+| CPU NumPy | 221.75 ms |
+| PyTorch CUDA GEMM | **2.98 ms** |
+| Naive CUDA Kernel | 38.97 ms |
+| Tiled CUDA Kernel | **21.18 ms** |
+
+### Key Findings
+
+- GPU GEMM achieved **~74.5x speedup** over CPU execution.
+- Shared memory tiling improved custom CUDA kernel performance by **45.6%**.
+- Optimized GPU libraries significantly outperform handwritten kernels through architecture-specific tuning.
+
+### Goal
+
+Understand how GPU parallelism, memory hierarchy, shared memory optimization, and CUDA kernel design influence AI workload performance.
+
+🔗 [View Repository](https://github.com/Pritiks23/gemm-kernel-study)
+
+---
+
 #  Distributed AI Systems
 
 <table>
