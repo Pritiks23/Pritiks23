@@ -53,7 +53,8 @@ CUDA benchmarking suite analyzing how GPU memory allocation strategies impact gr
 <td width="50%" valign="top">
 
 ## 🟣 EuroSAT GPU Training Pipeline
-<img width="250" alt="Screen Shot 2026-07-31 at 12 21 52 PM" src="https://github.com/user-attachments/assets/bff0c079-f320-4a77-ab86-b31f2670b388" />
+    <img width="527" height="300" alt="Screen Shot 2026-08-06 at 1 20 56 PM" src="https://github.com/user-attachments/assets/b351340e-b6c3-458a-aff4-8a843594758b" />
+
 
 End-to-end GPU accelerated computer vision training pipeline built with PyTorch.
 
