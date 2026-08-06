@@ -89,7 +89,22 @@ Analyze how GPU utilization, preprocessing acceleration, and training pipeline o
 
 
 ## 🔴 GEMM Kernel Optimization Study
-             <img width="527" height="300" alt="Screen Shot 2026-08-06 at 1 20 27 PM" src="https://github.com/user-attachments/assets/d46fecb4-426a-4d5c-8710-6248b68ccedb" />
+```text
+                GEMM Benchmark
+                       |
+    ----------------------------------------
+    |                  |                   |
+    v                  v                   v
+
+CPU Baseline      GPU Library        Custom CUDA Kernels
+    |                  |                   |
+    |                  |          --------------------
+    |                  |          |                  |
+    v                  v          v                  v
+
+CPU NumPy       PyTorch CUDA   Naive CUDA       Tiled CUDA
+                                Global Memory    Shared Memory
+```
 
 
 CUDA benchmarking study analyzing how different matrix multiplication implementations impact GPU performance.
